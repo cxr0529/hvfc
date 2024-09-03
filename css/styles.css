@@ -1,5 +1,12 @@
 * {
-	background-color: lightgrey;
+	background-color: white;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+  	bottom: 0;
+  	width: 100%;
 }
 
 #designed {
@@ -21,4 +28,12 @@
   margin-right: auto;
   margin-bottom: 10px;
   width: 75%;
+}
+
+#address {
+	text-align: center;
+}
+
+#map {
+	margin-bottom: 40px;
 }
