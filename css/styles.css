@@ -1,5 +1,9 @@
 * {
-	background-color: white;
+/*	background-color: #e29622;*/
+}
+
+body {
+	background-color: #e29622;
 }
 
 footer {
@@ -7,6 +11,10 @@ footer {
 	left: 0;
   	bottom: 0;
   	width: 100%;
+}
+
+nav {
+	background-color: #e29622;
 }
 
 #designed {
