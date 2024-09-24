@@ -9,12 +9,16 @@ body {
 footer {
 	position: fixed;
 	left: 0;
-  	bottom: 0;
-  	width: 100%;
+  bottom: 0;
+  width: 100%;
 }
 
 nav {
 	background-color: #e29622;
+}
+
+section {
+	padding-top: 25px;
 }
 
 #designed {
@@ -56,4 +60,17 @@ nav {
 
 #mercertwp {
 	width: 700px;
+}
+
+#disclaimer {
+	text-align: center;
+	color: red;
+}
+
+#calender {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 75%;
 }
