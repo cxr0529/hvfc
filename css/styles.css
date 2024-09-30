@@ -1,5 +1,7 @@
 * {
-/*	background-color: #e29622;*/
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -73,4 +75,8 @@ section {
   margin-right: auto;
   margin-bottom: 10px;
   width: 75%;
+}
+
+#links {
+	text-align: center;
 }
