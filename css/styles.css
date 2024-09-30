@@ -79,4 +79,7 @@ section {
 
 #links {
 	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	text-decoration: underline;
 }
