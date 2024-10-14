@@ -8,17 +8,6 @@ body {
 	background-color: #e29622;
 }
 
-footer {
-	position: fixed;
-	left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-nav {
-	background-color: #e29622;
-}
-
 section {
 	padding-top: 25px;
 }
