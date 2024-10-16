@@ -30,6 +30,8 @@ var calender = "snippets/calender.html";
 var construction = "snippets/construction.html";
 var links = "snippets/links.html";
 var members = "snippets/membersList.html";
+var lifetime = "snippets/lifetime.html";
+var apparatus = "snippets/apparatus.html";
 
 
 // Convenience function for inserting innerHTML for 'select'
@@ -124,6 +126,30 @@ hvfc.loadMembers = function () {
   showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   members,
+  function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+};
+
+//function to load lifetime page
+hvfc.loadLifetime = function () {
+  showLoading("#main-content");
+$ajaxUtils.sendGetRequest(
+  lifetime,
+  function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+};
+
+//function to load lifetime page
+hvfc.loadApparatus = function () {
+  showLoading("#main-content");
+$ajaxUtils.sendGetRequest(
+  apparatus,
   function (responseText) {
     document.querySelector("#main-content")
       .innerHTML = responseText;
