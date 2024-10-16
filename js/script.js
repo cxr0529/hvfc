@@ -29,6 +29,7 @@ var contact = "snippets/contact.html";
 var calender = "snippets/calender.html";
 var construction = "snippets/construction.html";
 var links = "snippets/links.html";
+var members = "snippets/membersList.html";
 
 
 // Convenience function for inserting innerHTML for 'select'
@@ -70,7 +71,7 @@ $ajaxUtils.sendGetRequest(
   false);
 };
 
-//function to load christmas page
+//function to load contact page
 hvfc.loadContact = function () {
   showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
@@ -82,7 +83,7 @@ $ajaxUtils.sendGetRequest(
   false);
 };
 
-//function to load christmas page
+//function to load calender page
 hvfc.loadCalender = function () {
   showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
@@ -94,7 +95,7 @@ $ajaxUtils.sendGetRequest(
   false);
 };
 
-//function to load christmas page
+//function to load construction page
 hvfc.loadConstruction = function () {
   showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
@@ -106,11 +107,23 @@ $ajaxUtils.sendGetRequest(
   false);
 };
 
-//function to load christmas page
+//function to load links page
 hvfc.loadLinks = function () {
   showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   links,
+  function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+};
+
+//function to load members page
+hvfc.loadMembers = function () {
+  showLoading("#main-content");
+$ajaxUtils.sendGetRequest(
+  members,
   function (responseText) {
     document.querySelector("#main-content")
       .innerHTML = responseText;

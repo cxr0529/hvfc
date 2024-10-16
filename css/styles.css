@@ -8,8 +8,22 @@ body {
 	background-color: #e29622;
 }
 
+div {
+	position: relative;
+}
+
 section {
 	padding-top: 25px;
+}
+
+.gallery {
+	border: 1px solid black;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.description {
+	text-align: center;
 }
 
 #designed {
