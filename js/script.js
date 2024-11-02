@@ -33,6 +33,7 @@ var members = "snippets/membersList.html";
 var lifetime = "snippets/lifetime.html";
 var apparatus = "snippets/apparatus.html";
 var rental = "snippets/hallRentalPhotos.html";
+var upcoming = "snippets/upcoming.html";
 
 
 // Convenience function for inserting innerHTML for 'select'
@@ -163,6 +164,18 @@ hvfc.loadRental = function () {
   showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   rental,
+  function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+};
+
+//function to load events page
+hvfc.loadUpcoming = function () {
+  showLoading("#main-content");
+$ajaxUtils.sendGetRequest(
+  upcoming,
   function (responseText) {
     document.querySelector("#main-content")
       .innerHTML = responseText;
